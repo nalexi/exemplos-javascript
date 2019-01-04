@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Exemplo 06.css" />
+    <script src="Exemplo 06.js"></script>
+</head>
+
+<body>
+    <form action="salvar" method="GET">
+        <div>
+            <input type="radio" name="tipo-pessoa" value="PJ" id="campo-tipo-pessoa-pj" onclick="apresentarPJ()">
+            <label for="campo-tipo-pessoa-pj">Pessoa Juridica</label>
+
+            <input type="radio" name="tipo-pessoa" value="PF" id="campo-tipo-pessoa-pf" onclick="apresentarPF()">
+            <label for="campo-tipo-pessoa-pf">Pessoa Fisica</label>
+        </div>
+        <div id="pessoa-fisica" class="oculto">
+            <div>
+                <label for="campo-nome">Nome</label>
+                <input type="text" name="nome" id="campo-nome">
+            </div>
+            <div>
+                <label for="campo-cpf">CPF</label>
+                <input type="text" name="cpf" id="campo-cpf" placeholder="999.999.999-99">
+            </div>
+        </div>
+        <div id="pessoa-juridica" class="oculto">
+            <div>
+                <label for="campo-razao-social">Razao Social</label>
+                <input type="text" name="razao-social" id="campo-razao-social">
+            </div>
+            <div>
+                <label for="campo-cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="campo-cnpj">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Salvar">
+        </div>
+
+    </form>
+</body>
+
+</html>

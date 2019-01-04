@@ -1,0 +1,17 @@
+.mb-10{
+    margin-bottom: 10px;
+}
+.float-right{
+    float: right;
+    width: 300px;
+}
+.vermelho{
+    border: 1px solid red;
+}
+.verde{
+    border: 1px solid green;
+}
+
+.texto-vermelho{
+    color: red;
+}
