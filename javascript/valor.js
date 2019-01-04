@@ -4,5 +4,5 @@ function valor() {
     quantidade = parseInt(quantidade);
     valor = parseFloat(valor);
     var valorTotalItens = quantidade * valor;
-    return this.valorTotalItens;
+    valorTotalItens;
 }
